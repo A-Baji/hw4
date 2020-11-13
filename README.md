@@ -37,4 +37,4 @@ In the phongShading function, I used the same math and code as I did in homework
 
 **Problem 3**
 
-For problem 3 we had to add shadow casting to our objects. To do this is really simple. In the trace function of the Scene class, we create a reference Ray object and set its origin to the position of our HitRecord object, and the direction as out lightDir vector. Then in a for loop we use this reference Ray to check for the closest hit, and if there is something between the position and light source then we return the result as black for shadow.
+For problem 3 we had to add shadow casting to our objects. To do this is really simple. In the trace function of the Scene class, we create a reference Ray object and set its origin to the position of our HitRecord object, and the direction as our lightDir vector. Then in a for loop we use this reference Ray to check for the closest hit, and if there is something between the position and light source then we return the result as black for shadow.
