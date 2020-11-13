@@ -21,10 +21,10 @@ In Triangle.h, we simply have a constructor, a HitRecord function for the inters
 In Triangle.cpp, we define our intersect function:
 * Calculate the normal
 * Check if the ray and plane are parallel
- * If they are then there is no hit
+  * If they are then there is no hit
 * Check if the triangle is behind the ray
- * If it is then there is no hit
+  * If it is then there is no hit
 * Calculate position of intersect point
 * Check if instersect is within triangle
- * If not then no hit
- * Otherwise, return the HitRecord with the newly calculated t, position, and normal values
+  * If not then no hit
+  * Otherwise, return the HitRecord with the newly calculated t, position, and normal values
