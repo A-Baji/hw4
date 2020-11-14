@@ -1,6 +1,4 @@
 #include <iostream>
-#include <stdlib.h>
-#include <fstream>
 #include "Image.h"
 #include "Scene.h"
 #include "Sphere.h"
@@ -10,8 +8,6 @@ using namespace Raytracer148;
 using namespace Eigen;
 
 int main() {
-    ofstream myfile;
-    myfile.open("vectors.txt");
 
     Image im(400, 400);
 
