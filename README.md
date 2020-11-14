@@ -33,7 +33,7 @@ In Triangle.cpp, we define our intersect function:
   
 For problem 2 we had to implement phong shading for our objects. To do this I created a new function in the Scene class called phongShading that takes a HitRecord object, a Vector, and a double as parameters and then returns a vector with the correct shading. The HitRecord object holds the normal and position. The vector is the light direction, and the double is our object color. These are all calculated in the trace function of the Scene class, and then phongShading is called in the trace function using those values.
 
-In the phongShading function, I used the same math and code as I did in homework 3 and converted it to eigen vectors. I used (0, 0, 0) for the viewPos, (1, 1, 1) for lightColor, and the object color paramenter for objectColor. Then I calculate ambient light, diffuse light, and specular light. Then I added them all together, multiplied it by the object color and return the value.
+In the phongShading function, I used the same math and code as I did in homework 3 and converted it to eigen vectors. I used (0, 0, 0) for the viewPos, (1, 1, 1) for lightColor, and the double parameter for objectColor. Then I calculate ambient light, diffuse light, and specular light. Then I added them all together, multiplied it by the object color and return the value.
 
 **Problem 3**
 
