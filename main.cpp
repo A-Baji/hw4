@@ -24,18 +24,10 @@ int main() {
     center[2] = 2.5;
     scene.addShape(new Sphere(center, .5));
 
-    /*center[0] = .5;
-    center[1] = 1.25;
-    center[2] = 2.75;
-    scene.addShape(new Sphere(center, .5));*/
-
     center[0] = -3;
     center[1] = 0;
     center[2] = 16;
     scene.addShape(new Sphere(center, 11));
-
-    srand(time(NULL));
-    double rando;
 
     Vector3d p1;
     p1[0] = 1.0;
