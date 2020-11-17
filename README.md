@@ -33,7 +33,7 @@ The method for coloring objects was also added to the Sphere's intersect functio
 
 Note about object coloring:
 
-I tried to randomize the color of each individual object, but for some reason all objects of the same type would still be given the same color, so I ended up just hard coding the colors.
+I tried to randomize the color of each individual object in their intersect function so that everytime the intersect was called for a shape, it would be given a new color, but for some reason all objects of the same type would still be given the same color, so I ended up just hard coding the colors.
   
 **Problem 2**
   
