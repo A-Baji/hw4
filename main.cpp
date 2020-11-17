@@ -33,17 +33,14 @@ int main() {
     p1[0] = 1.0;
     p1[1] = 0.8;
     p1[2] = 2.75;
-
     Vector3d p2;
     p2[0] = 0.2;
     p2[1] = 0.8;
     p2[2] = 2.3;
-
     Vector3d p3;
     p3[0] = 0.2;
     p3[1] = 1.75;
     p3[2] = 2.3;
-
     scene.addShape(new Triangle(p1, p2, p3));
 
     scene.render(im);

@@ -11,7 +11,7 @@ namespace Raytracer148 {
 	class Shape;
 
 	struct HitRecord {
-		Eigen::Vector3d position, normal;
+		Eigen::Vector3d position, normal, color;
 		double t;
 	};
 

@@ -42,7 +42,7 @@ Vector3d Scene::trace(const Ray &ray) {
         HitRecord r = shapes[i]->intersect(ref);
 
         // If something is between the position and light source, then return result as black (shadow)
-        if (r.t > 0.00000000000001)  return result;
+        if (r.t > 0.000000000001)  return result;
     }
 
     double dot = lightDir.dot(r.normal);
@@ -83,7 +83,9 @@ Vector3d Scene::phongShading(HitRecord r, Vector3d lightDir, double dot) {
 
     viewPos[0] = viewPos[1] = viewPos[2] = 0;
     lightColor[0] = lightColor[1] = lightColor[2] = 1;
-    objectColor[0] = objectColor[1] = objectColor[2] = dot;
+    objectColor[0] = dot * r.color[0];
+    objectColor[1] = dot * r.color[1];
+    objectColor[2] = dot * r.color[2];
 
     // Calculate ambient lighting by multiplying the ambient strength by the light color
     double ambientStrength = 0.1;
