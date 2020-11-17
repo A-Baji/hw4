@@ -54,5 +54,9 @@ HitRecord Triangle::intersect(const Ray& ray) {
     result.position = position;
     result.normal = normal;
 
+    result.color[0] = 0.25;
+    result.color[1] = 0.25;
+    result.color[2] = 1.0;
+
     return result;
 }

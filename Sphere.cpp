@@ -30,5 +30,9 @@ HitRecord Sphere::intersect(const Ray &ray) {
     result.position = ray.origin + result.t * ray.direction;
     result.normal = (result.position - c).normalized();
 
+    result.color[0] = 1.0;
+    result.color[1] = 0.25;
+    result.color[2] = 0.25;
+
     return result;
 }
