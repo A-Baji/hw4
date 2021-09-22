@@ -1,8 +1,6 @@
 # hw4
 COSC 4370 Homework 4
 
-PSID: 1776794
-
 ## Environment:
 * OS: Windows 10
 
